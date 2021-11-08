@@ -6,12 +6,23 @@ package com;
 
 public class DO1 implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public DO1() {
-    }
+	private com.DO2 do2;
 
+	public DO1() {
+	}
 
+	public com.DO2 getDo2() {
+		return this.do2;
+	}
 
+	public void setDo2(com.DO2 do2) {
+		this.do2 = do2;
+	}
+
+	public DO1(com.DO2 do2) {
+		this.do2 = do2;
+	}
 
 }
