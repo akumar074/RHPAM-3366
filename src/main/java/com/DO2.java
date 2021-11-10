@@ -10,6 +10,10 @@ public class DO2 implements java.io.Serializable {
 
 	private com.DO1 do1;
 
+	private java.lang.String address;
+
+	private java.lang.String email;
+
 	public DO2() {
 	}
 
@@ -21,8 +25,26 @@ public class DO2 implements java.io.Serializable {
 		this.do1 = do1;
 	}
 
-	public DO2(com.DO1 do1) {
+	public java.lang.String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
+
+	public java.lang.String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(java.lang.String email) {
+		this.email = email;
+	}
+
+	public DO2(com.DO1 do1, java.lang.String address, java.lang.String email) {
 		this.do1 = do1;
+		this.address = address;
+		this.email = email;
 	}
 
 }
