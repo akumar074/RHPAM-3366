@@ -12,6 +12,8 @@ public class DO1 implements java.io.Serializable {
 
 	private java.lang.String name;
 
+	private java.lang.String cont;
+
 	public DO1() {
 	}
 
@@ -31,9 +33,18 @@ public class DO1 implements java.io.Serializable {
 		this.name = name;
 	}
 
-	public DO1(com.DO2 do2, java.lang.String name) {
+	public java.lang.String getCont() {
+		return this.cont;
+	}
+
+	public void setCont(java.lang.String cont) {
+		this.cont = cont;
+	}
+
+	public DO1(com.DO2 do2, java.lang.String name, java.lang.String cont) {
 		this.do2 = do2;
 		this.name = name;
+		this.cont = cont;
 	}
 
 }
