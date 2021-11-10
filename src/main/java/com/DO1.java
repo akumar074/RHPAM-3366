@@ -10,6 +10,8 @@ public class DO1 implements java.io.Serializable {
 
 	private com.DO2 do2;
 
+	private java.lang.String name;
+
 	public DO1() {
 	}
 
@@ -21,8 +23,17 @@ public class DO1 implements java.io.Serializable {
 		this.do2 = do2;
 	}
 
-	public DO1(com.DO2 do2) {
+	public java.lang.String getName() {
+		return this.name;
+	}
+
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public DO1(com.DO2 do2, java.lang.String name) {
 		this.do2 = do2;
+		this.name = name;
 	}
 
 }
